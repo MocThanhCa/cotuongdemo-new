@@ -1,0 +1,113 @@
+[
+  {
+    "ContainingType": "cotuongdemotest1.Controllers.GameController",
+    "Method": "MakeMove",
+    "RelativePath": "api/Game/{gameId}/move",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gameId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "moveRequest",
+        "Type": "cotuongdemotest1.Models.DTOs.MoveRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cotuongdemotest1.Controllers.GameController",
+    "Method": "GetGameState",
+    "RelativePath": "api/Game/{gameId}/state",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gameId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cotuongdemotest1.Controllers.GameController",
+    "Method": "JoinGame",
+    "RelativePath": "api/Game/joinGame",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "cotuongdemotest1.Models.DTOs.JoinGameRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cotuongdemotest1.Controllers.GameController",
+    "Method": "LeaveGame",
+    "RelativePath": "api/Game/leaveGame/{gameId}/{userId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gameId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cotuongdemotest1.Controllers.GameController",
+    "Method": "CreateNewGame",
+    "RelativePath": "api/Game/new",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "cotuongdemotest1.Models.DTOs.JoinGameRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cotuongdemotest1.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[cotuongdemotest1.WeatherForecast, cotuongdemotest1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
